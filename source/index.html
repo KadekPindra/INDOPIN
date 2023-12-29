@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pindra-Movie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="w-full">
+    
+<!-- START NAVBAR -->
+<nav class="h-20 bg-slate-900 w-full flex justify-center items-center">
+    <div class="flex">
+        <h1 class="text-white font-black text-2xl tracking-widest">INDOPIN - MOVIE</h1>
+    </div>
+</nav>
+<!-- END NAVBAR -->
+
+<!-- START Search -->
+<div class=" flex flex-col w-full h-fit justify-center text-center items-center">
+    <div class="w-full flex items-center text-center justify-center p-2 mt-10">
+        <h2 class="text-2xl text-center font-semibold text-black tracking-wider">Search Movie</h2>
+    </div>
+    <div class="flex p-2 mb-10">
+        <input class="w-[500px] p-2 h-8 border border-gray-500 rounded text-black" type="text" placeholder="Movie title..."  id="search-input">
+        <button class="w-20 h-8 -ml-10 border-gray-500 rounded text-white font-semibold bg-slate-900" id="search-btn" type="button">Search</button>
+    </div>
+</div>
+<div class="w-full flex justify-center"><hr class="w-4/5 border-[1px] bg-slate-700"></div>
+<!-- END Search -->
+
+<!-- START content -->
+<div class="grid grid-cols-3 justify-center w-full p-10 h-fit " id="movie-list">
+    
+
+</div>
+<!-- END content -->
+<div id="detail" class="bg-black hidden fixed top-0 bg-opacity-50 opacity-0 w-screen h-screen justify-center items-center transition-opacity duration-500">
+    
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
+
